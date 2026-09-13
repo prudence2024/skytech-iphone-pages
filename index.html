@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skytech Gadgets Hub — iPhone | Premium Brand New & UK Used iPhones in Lagos</title>
+<meta name="description" content="Explore Brand New & UK Used iPhones at Skytech Gadgets Hub. Verified devices, honest grading, WhatsApp-first buying.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0A0A0A',
+        elevated: '#121212',
+        secondary: '#1F1F1F',
+        line: '#262626',
+        skydeep: '#067418',
+        skyacid: '#00FF2B',
+        muted: '#A1A1A1',
+        faint: '#6B6B6B'
+      },
+      fontFamily: {
+        grotesk: ['"Space Grotesk"', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace']
+      }
+    }
+  }
+}
+</script>
+<style>
+  :root{ --acid:#00FF2B; --deep:#067418; }
+  *{ -webkit-tap-highlight-color:transparent; }
+  html{ scroll-behavior:smooth; }
+  html,body{ background:#0A0A0A; color:#fff; overflow-x:hidden; }
+  body{ font-family:Inter,sans-serif; -webkit-font-smoothing:antialiased; }
+  ::selection{ background:#00FF2B; color:#000; }
+  :focus-visible{ outline:2px solid #00FF2B; outline-offset:3px; border-radius:2px; }
+  .skip{ position:absolute; left:-9999px; top:0; background:#00FF2B; color:#000; padding:12px 18px; z-index:200; font-weight:700; }
+  .skip:focus{ left:12px; top:12px; }
+
+  /* grain */
+  .grain{ position:fixed; inset:0; z-index:90; pointer-events:none; opacity:.07; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+  .display{ font-family:"Space Grotesk",sans-serif; letter-spacing:-0.04em; line-height:.88; font-weight:700; }
+  .outline-text{ color:transparent; -webkit-text-stroke:1.5px rgba(255,255,255,.85); }
+  .outline-faint{ color:transparent; -webkit-text-stroke:1px rgba(255,255,255,.28); }
+  .eyebrow{ font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; }
+  .vertical{ writing-mode:vertical-rl; text-orientation:mixed; }
+
+  /* preloader */
+  #preloader{ position:fixed; inset:0; z-index:200; background:#0A0A0A; display:flex; flex-direction:column; justify-content:flex-end; padding:32px; transition:opacity .8s ease, visibility .8s; }
+  #preloader.done{ opacity:0; visibility:hidden; }
+  #loadbar{ height:2px; background:#262626; position:relative; overflow:hidden; }
+  #loadfill{ position:absolute; inset:0; background:#fff; transform-origin:left; transform:scaleX(0); }
+  #loadfill::after{ content:''; position:absolute; right:0; top:0; width:60px; height:100%; background:#00FF2B; filter:blur(8px); opacity:.9; }
+
+  /* line masks */
+  .mask{ overflow:hidden; display:block; }
+  .mask > span{ display:block; transform:translateY(110%); }
+  .no-motion .mask > span{ transform:none !important; }
+
+  /* buttons */
+  .btn{ position:relative; display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; padding:0 28px; font-family:"Space Grotesk",sans-serif; font-weight:600; font-size:15px; letter-spacing:-.01em; border-radius:2px; overflow:hidden; transition:transform .3s cubic-bezier(.2,.8,.2,1), background .3s, color .3s, border-color .3s; cursor:pointer; white-space:nowrap; }
+  .btn:active{ transform:scale(.97); }
+  .btn-white{ background:#fff; color:#000; }
+  .btn-white::before{ content:''; position:absolute; inset:0; background:#00FF2B; transform:translateY(101%); transition:transform .45s cubic-bezier(.65,0,.35,1); }
+  .btn-white:hover::before{ transform:translateY(0); }
+  .btn-white span, .btn-white svg{ position:relative; z-index:1; }
+  .btn-ghost{ border:1px solid #333; color:#fff; background:rgba(255,255,255,.02); }
+  .btn-ghost:hover{ border-color:#fff; background:rgba(255,255,255,.06); }
+  .btn-green{ background:#067418; color:#fff; }
+  .btn-green:hover{ background:#0a8f1f; }
+  .magnetic{ will-change:transform; }
+
+  /* hero */
+  .hero-grid{ position:absolute; inset:0; pointer-events:none; opacity:.5;
+    background-image:linear-gradient(to right, rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size:calc(100% / 6) 100%; mask-image:linear-gradient(to bottom, black 40%, transparent 90%); }
+  .hero-glow{ position:absolute; width:900px; height:900px; right:-200px; bottom:-300px; pointer-events:none;
+    background:radial-gradient(closest-side, rgba(6,116,24,.55) 0%, rgba(6,116,24,.18) 40%, transparent 70%); filter:blur(20px); }
+  .hero-glow-2{ position:absolute; width:600px; height:400px; left:-200px; top:10%; pointer-events:none;
+    background:radial-gradient(closest-side, rgba(255,255,255,.07) 0%, transparent 70%); filter:blur(10px); }
+  .hero-img-wrap{ perspective:1200px; }
+  .hero-img-inner{ transform-style:preserve-3d; will-change:transform; box-shadow:0 80px 120px -30px rgba(0,0,0,.9), 0 0 0 1px #262626, 0 0 120px -40px rgba(6,116,24,.6); }
+  .img-premium{ filter:contrast(1.08) saturate(.92) brightness(.94); }
+  .live-dot{ width:7px; height:7px; background:#00FF2B; border-radius:99px; box-shadow:0 0 12px #00FF2B; animation:pulse 2s infinite; }
+  @keyframes pulse{ 0%,100%{ opacity:1; } 50%{ opacity:.4; } }
+
+  /* marquee */
+  .marquee{ overflow:hidden; white-space:nowrap; border-top:1px solid #262626; border-bottom:1px solid #262626; background:#0A0A0A; }
+  .marquee-track{ display:inline-flex; gap:0; animation:marq 28s linear infinite; will-change:transform; }
+  @keyframes marq{ to{ transform:translateX(-50%); } }
+  .marquee:hover .marquee-track{ animation-play-state:paused; }
+  @media (prefers-reduced-motion:reduce){ .marquee-track{ animation:none; } }
+
+  /* product cards */
+  .p-card{ background:#121212; border:1px solid #262626; border-radius:3px; overflow:hidden; transition:border-color .3s, transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s; position:relative; }
+  .p-card:hover{ border-color:#3a3a3a; transform:translateY(-4px); box-shadow:0 30px 60px -20px rgba(0,0,0,.8); }
+  .p-card .p-img{ aspect-ratio:4/4.6; overflow:hidden; background:#1a1a1a; position:relative; }
+  .p-card .p-img img{ width:100%; height:100%; object-fit:cover; transition:transform .8s cubic-bezier(.2,.8,.2,1), opacity .5s; }
+  .p-card:hover .p-img img{ transform:scale(1.06); }
+  .p-card .p-img::after{ content:''; position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,.45), transparent 45%); pointer-events:none; }
+  .cond{ font-family:"JetBrains Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; padding:6px 10px; border-radius:2px; }
+  .cond-new{ background:#fff; color:#000; }
+  .cond-used{ background:transparent; border:1px solid rgba(255,255,255,.3); color:#fff; backdrop-filter:blur(8px); }
+  .price{ font-family:"Space Grotesk",sans-serif; font-weight:700; letter-spacing:-.02em; }
+
+  .chip{ min-height:44px; display:inline-flex; align-items:center; padding:0 18px; border:1px solid #2a2a2a; border-radius:99px; font-size:13.5px; font-weight:500; color:#BDBDBD; cursor:pointer; transition:all .25s; background:#121212; user-select:none; }
+  .chip:hover{ border-color:#555; color:#fff; }
+  .chip.active{ background:#fff; color:#000; border-color:#fff; font-weight:600; }
+  .chip.issue.active{ background:#067418; border-color:#067418; color:#fff; }
+
+  /* skeleton */
+  .skel{ background:#121212; border:1px solid #262626; border-radius:3px; overflow:hidden; }
+  .skel .shimmer{ position:relative; overflow:hidden; background:#1a1a1a; }
+  .skel .shimmer::after{ content:''; position:absolute; inset:0; background:linear-gradient(100deg, transparent 20%, rgba(255,255,255,.06) 50%, transparent 80%); animation:shim 1.4s infinite; }
+  @keyframes shim{ from{ transform:translateX(-100%);} to{ transform:translateX(100%);} }
+
+  /* editorial */
+  .h-line{ height:1px; background:#262626; }
+  .num{ font-family:"Space Grotesk",sans-serif; font-size:13px; color:#6B6B6B; }
+  .sticky-img{ position:sticky; top:96px; }
+  .chapter{ border-left:1px solid #262626; padding-left:28px; position:relative; transition:border-color .3s; }
+  .chapter::before{ content:''; position:absolute; left:-4px; top:6px; width:7px; height:7px; background:#333; border-radius:99px; transition:all .3s; }
+  .chapter.active{ border-color:rgba(255,255,255,.25); }
+  .chapter.active::before{ background:#00FF2B; box-shadow:0 0 12px #00FF2B; }
+
+  .why-row{ border-top:1px solid #262626; transition:background .3s; cursor:pointer; }
+  .why-row:last-child{ border-bottom:1px solid #262626; }
+  .why-row:hover{ background:rgba(255,255,255,.025); }
+  .why-row .why-detail{ max-height:0; overflow:hidden; transition:max-height .5s cubic-bezier(.65,0,.35,1), opacity .4s; opacity:0; }
+  .why-row.open .why-detail{ max-height:220px; opacity:1; }
+  .why-row.open .plus{ transform:rotate(45deg); }
+  .plus{ transition:transform .3s; }
+  #why-float{ position:fixed; width:260px; height:340px; pointer-events:none; z-index:40; opacity:0; transform:scale(.9) rotate(-2deg); transition:opacity .3s, transform .4s; overflow:hidden; border-radius:3px; border:1px solid #333; }
+  #why-float.show{ opacity:1; transform:scale(1) rotate(0deg); }
+
+  .faq-item{ border-bottom:1px solid #262626; }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .5s cubic-bezier(.65,0,.35,1); }
+  .faq-item.open .faq-a{ max-height:300px; }
+  .faq-item.open .faq-icon{ transform:rotate(45deg); background:#fff; color:#000; }
+  .faq-icon{ transition:all .3s; }
+
+  /* inputs */
+  .inp{ width:100%; background:#0A0A0A; border:1px solid #2a2a2a; border-radius:2px; min-height:52px; padding:0 16px; color:#fff; font-size:15px; transition:border-color .25s; }
+  .inp:focus{ border-color:#fff; outline:none; }
+  textarea.inp{ padding:14px 16px; min-height:110px; resize:vertical; }
+  select.inp{ appearance:none; background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 16px center; }
+
+  /* modal */
+  #pmodal{ position:fixed; inset:0; z-index:120; display:none; }
+  #pmodal.show{ display:block; }
+  #pmodal .backdrop{ position:absolute; inset:0; background:rgba(0,0,0,.8); backdrop-filter:blur(12px); opacity:0; transition:opacity .4s; }
+  #pmodal.show .backdrop{ opacity:1; }
+  #pmodal .panel{ position:absolute; inset:0; margin:auto; max-width:1020px; height:fit-content; max-height:92vh; overflow:auto; background:#121212; border:1px solid #333; border-radius:4px; transform:translateY(30px) scale(.98); opacity:0; transition:all .5s cubic-bezier(.2,.8,.2,1); }
+  #pmodal.show .panel{ transform:none; opacity:1; }
+  @media(max-width:768px){ #pmodal .panel{ inset:auto 0 0 0; max-height:94vh; border-radius:16px 16px 0 0; transform:translateY(100%); } #pmodal.show .panel{ transform:none; } }
+
+  /* mobile menu */
+  #mmenu{ position:fixed; inset:0; z-index:110; background:#0A0A0A; transform:translateY(-100%); transition:transform .6s cubic-bezier(.65,0,.35,1); display:flex; flex-direction:column; }
+  #mmenu.show{ transform:none; }
+  #mmenu a.mlink{ font-family:"Space Grotesk",sans-serif; font-size:clamp(2rem,9vw,3rem); font-weight:700; letter-spacing:-.03em; line-height:1; padding:14px 0; border-bottom:1px solid #1e1e1e; display:flex; justify-content:space-between; align-items:center; }
+
+  /* sticky mobile cta */
+  #stickycta{ position:fixed; bottom:0; left:0; right:0; z-index:80; background:rgba(10,10,10,.92); backdrop-filter:blur(16px); border-top:1px solid #262626; padding:10px 12px calc(10px + env(safe-area-inset-bottom)); transform:translateY(110%); transition:transform .5s cubic-bezier(.2,.8,.2,1); }
+  #stickycta.show{ transform:none; }
+
+  /* toast */
+  #toast{ position:fixed; bottom:90px; left:50%; transform:translateX(-50%) translateY(20px); z-index:130; background:#fff; color:#000; padding:12px 20px; border-radius:99px; font-size:13.5px; font-weight:600; opacity:0; pointer-events:none; transition:all .4s; display:flex; gap:8px; align-items:center; max-width:90vw; }
+  #toast.show{ opacity:1; transform:translateX(-50%) translateY(0); }
+
+  /* nav */
+  #nav{ transition:background .4s, border-color .4s, backdrop-filter .4s; border-bottom:1px solid transparent; }
+  #nav.scrolled{ background:rgba(10,10,10,.86); backdrop-filter:blur(18px); border-color:#1e1e1e; }
+
+  .drag-scroll{ cursor:grab; scrollbar-width:none; }
+  .drag-scroll::-webkit-scrollbar{ display:none; }
+  .drag-scroll.dragging{ cursor:grabbing; scroll-behavior:auto !important; }
+
+  .reveal-img{ clip-path:inset(8% 6% 8% 6% round 4px); transition:clip-path 1.2s cubic-bezier(.2,.8,.2,1); }
+  .reveal-img.in{ clip-path:inset(0 0 0 0 round 4px); }
+
+  .tick{ font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.14em; }
+
+  /* reduced motion */
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{ animation-duration:.01ms !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+    .mask > span{ transform:none !important; }
+  }
+  .no-motion .reveal-img{ clip-path:none !important; }
+
+  /* hide scrollbar for page? keep native */
+  ::-webkit-scrollbar{ width:10px; }
+  ::-webkit-scrollbar-track{ background:#0A0A0A; }
+  ::-webkit-scrollbar-thumb{ background:#2a2a2a; border-radius:99px; }
+  ::-webkit-scrollbar-thumb:hover{ background:#3a3a3a; }
+
+  .quote-mark{ font-family:"Space Grotesk",sans-serif; font-size:72px; line-height:.5; color:#262626; }
+  .placeholder-badge{ font-family:"JetBrains Mono",monospace; font-size:10px; letter-spacing:.14em; border:1px dashed rgba(255,255,255,.3); color:#A1A1A1; padding:5px 10px; border-radius:99px; }
+
+  .compare-panel{ transition:border-color .4s, background .4s; }
+  .compare-panel:hover{ border-color:#3d3d3d; }
+</style>
+</head>
+<body class="antialiased">
+<a href="#catalogue" class="skip">Skip to iPhone catalogue</a>
+<div class="grain"></div>
+
+<!-- PRELOADER -->
+<div id="preloader" aria-hidden="true">
+  <div class="flex justify-between items-end mb-6">
+    <div>
+      <p class="eyebrow text-faint mb-3">SKYTECH GADGETS HUB — /IPHONE</p>
+      <p class="font-grotesk font-bold text-3xl md:text-5xl tracking-tight">Loading the<br>showroom<span style="color:#00FF2B">.</span></p>
+    </div>
+    <p id="loadpct" class="font-grotesk font-bold text-5xl md:text-7xl tracking-tighter text-secondary" style="color:#1F1F1F; -webkit-text-stroke:1px #333;">00</p>
+  </div>
+  <div id="loadbar"><div id="loadfill"></div></div>
+  <p class="tick text-faint mt-4">CONNECTING TO ADMIN CATALOGUE …</p>
+</div>
+
+<!-- NAV -->
+<header id="nav" class="fixed top-0 left-0 right-0 z-[100]">
+  <div class="max-w-[1440px] mx-auto px-5 md:px-10 h-[72px] flex items-center justify-between gap-4">
+    <a href="#top" class="flex items-center gap-3 group" aria-label="Skytech Gadgets Hub home">
+      <span class="w-9 h-9 bg-white text-black font-grotesk font-bold flex items-center justify-center text-lg rounded-[2px] group-hover:bg-[#00FF2B] transition-colors">S</span>
+      <span class="leading-none">
+        <span class="block font-grotesk font-bold tracking-tight text-[17px]">SKYTECH<span style="color:#00FF2B">.</span></span>
+        <span class="block eyebrow text-faint mt-1" style="font-size:9px;">GADGETS HUB</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-[13.5px] font-medium text-muted" aria-label="Primary">
+      <a href="#discover" class="hover:text-white transition-colors">Discover</a>
+      <a href="#story" class="hover:text-white transition-colors">Spotlight</a>
+      <a href="#catalogue" class="hover:text-white transition-colors">Catalogue</a>
+      <a href="#compare" class="hover:text-white transition-colors">New vs Used</a>
+      <a href="#why" class="hover:text-white transition-colors">Why Skytech</a>
+      <a href="#repair" class="hover:text-white transition-colors">Repair</a>
+      <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <span class="hidden md:inline-flex items-center gap-2 eyebrow text-faint border border-line rounded-full px-4 py-2"><span class="live-dot"></span> LAGOS • LIVE</span>
+      <a href="#catalogue" class="btn btn-white magnetic hidden sm:inline-flex !min-h-[44px] !px-5 !text-[14px]"><span>Explore iPhones</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      <button id="menubtn" class="lg:hidden w-[44px] h-[44px] border border-line rounded-[2px] flex flex-col items-center justify-center gap-[6px]" aria-label="Open menu" aria-expanded="false">
+        <span class="block w-5 h-[2px] bg-white"></span><span class="block w-5 h-[2px] bg-white"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mmenu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="px-5 h-[72px] flex items-center justify-between border-b border-line">
+    <span class="font-grotesk font-bold text-lg">SKYTECH<span style="color:#00FF2B">.</span> <span class="eyebrow text-faint ml-2">/IPHONE</span></span>
+    <button id="menuclose" class="w-[44px] h-[44px] border border-line rounded-[2px] text-xl" aria-label="Close menu">×</button>
+  </div>
+  <nav class="px-5 py-6 flex-1 overflow-auto" aria-label="Mobile">
+    <a class="mlink" href="#discover">Discover <span class="text-sm text-faint font-mono">01</span></a>
+    <a class="mlink" href="#story">Spotlight <span class="text-sm text-faint font-mono">02</span></a>
+    <a class="mlink" href="#catalogue">Catalogue <span class="text-sm text-faint font-mono">03</span></a>
+    <a class="mlink" href="#compare">New vs Used <span class="text-sm text-faint font-mono">04</span></a>
+    <a class="mlink" href="#why">Why Skytech <span class="text-sm text-faint font-mono">05</span></a>
+    <a class="mlink" href="#repair">Repair <span class="text-sm text-faint font-mono">06</span></a>
+    <a class="mlink" href="#faq">FAQ <span class="text-sm text-faint font-mono">07</span></a>
+  </nav>
+  <div class="p-5 border-t border-line grid grid-cols-2 gap-3">
+    <a href="#catalogue" class="btn btn-white mlink-close"><span>Explore</span></a>
+    <a href="#" data-wa="Hello Skytech! I found you via /iphone. I'd like to talk about iPhones." class="btn btn-ghost wa-link"><span>WhatsApp</span></a>
+  </div>
+</div>
+
+<main id="top">
+<!-- ============ 1. CINEMATIC HERO ============ -->
+<section id="hero" class="relative min-h-[100svh] flex flex-col justify-end overflow-hidden pt-[100px]" aria-label="iPhone campaign hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <!-- faint giant word -->
+  <div class="absolute top-[12%] left-0 right-0 text-center pointer-events-none select-none" aria-hidden="true">
+    <span class="display outline-faint text-[22vw] md:text-[18vw] opacity-40" id="hero-bg-word">IPHONE</span>
+  </div>
+
+  <div class="max-w-[1440px] mx-auto px-5 md:px-10 w-full relative z-10 grid lg:grid-cols-12 gap-10 items-end pb-10">
+    <!-- Left type -->
+    <div class="lg:col-span-7 relative z-20">
+      <div id="hero-eyebrow" class="flex flex-wrap items-center gap-3 mb-6 opacity-0">
+        <span class="inline-flex items-center gap-2 bg-elevated border border-line rounded-full px-4 py-2 eyebrow text-muted"><span class="live-dot"></span> LIVE CATALOGUE — SYNCED WITH ADMIN</span>
+        <span class="eyebrow text-faint border border-line rounded-full px-4 py-2">ROUTE&nbsp;&nbsp;/IPHONE</span>
+      </div>
+      <h1 class="display text-[15.5vw] sm:text-[11vw] lg:text-[7.6vw] xl:text-[7.2vw]">
+        <span class="mask"><span>Buy iPhone</span></span>
+        <span class="mask"><span>like it <em class="not-italic outline-text">matters</em><span style="color:#00FF2B">.</span></span></span>
+      </h1>
+      <div class="grid md:grid-cols-2 gap-8 mt-8 items-end">
+        <p id="hero-sub" class="text-muted text-[15.5px] md:text-[17px] leading-relaxed max-w-[420px] opacity-0">
+          Brand New &amp; UK Used iPhones — honestly graded, ready for pickup or delivery.
+          One tap and you're talking to a real person on WhatsApp. No checkout stress.
+        </p>
+        <div id="hero-meta" class="flex items-center gap-6 opacity-0">
+          <div class="vertical eyebrow text-faint hidden md:block">SCROLL — 01/12</div>
+          <div class="h-[52px] w-px bg-line hidden md:block"></div>
+          <p class="tick text-faint leading-loose">PHYSICAL HUB • LAGOS<br>WHATSAPP-FIRST BUYING<br>PAY ON CONFIRMATION</p>
+        </div>
+      </div>
+      <div id="hero-ctas" class="flex flex-col sm:flex-row gap-3 mt-8 opacity-0">
+        <a href="#catalogue" class="btn btn-white magnetic text-base !min-h-[58px] !px-8"><span>Explore iPhones</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+        <a href="#" data-wa="Hello Skytech! I came from your iPhone page (/iphone). I want to buy an iPhone. Please assist." class="btn btn-ghost magnetic !min-h-[58px] !px-8 wa-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.5 7.5 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.9a12 12 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.1-.5-.3Z"/></svg>
+          <span>Talk to Skytech</span>
+        </a>
+      </div>
+      <p class="mt-4 text-[13px] text-faint">Repair instead? <a href="#repair" class="underline underline-offset-4 hover:text-white">Ask about a repair →</a></p>
+    </div>
+
+    <!-- Right image -->
+    <div class="lg:col-span-5 relative z-10 hero-img-wrap">
+      <div id="hero-img" class="hero-img-inner relative rounded-[3px] overflow-hidden opacity-0" style="aspect-ratio:4/5.1; max-height:640px;">
+        <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=1200&auto=format&fit=crop" alt="iPhone 15 Pro Max in Natural Titanium held in dramatic light" class="w-full h-full object-cover img-premium" fetchpriority="high" width="900" height="1150" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=1200&auto=format&fit=crop'">
+        <div class="absolute inset-0 pointer-events-none" style="background:linear-gradient(to top, rgba(0,0,0,.72) 0%, transparent 42%), radial-gradient(120% 60% at 50% 100%, rgba(6,116,24,.4), transparent 60%);"></div>
+        <div class="absolute top-4 left-4 right-4 flex justify-between items-start">
+          <span class="cond cond-new">Brand New</span>
+          <span class="tick text-white/80 bg-black/40 backdrop-blur px-3 py-2 rounded-[2px] border border-white/10">15 PRO MAX • 256GB</span>
+        </div>
+        <!-- floating price card -->
+        <div class="absolute bottom-4 left-4 right-4 bg-[#0e0e0e]/90 backdrop-blur-md border border-line rounded-[3px] p-4 flex items-center justify-between gap-3">
+          <div>
+            <p class="eyebrow text-faint mb-1">FEATURED — FROM ADMIN</p>
+            <p class="font-grotesk font-bold text-lg leading-none">iPhone 15 Pro Max</p>
+            <p class="price text-[15px] mt-1 text-white/90">₦1,850,000</p>
+          </div>
+          <button data-open-product="iphone-15-pro-max-256gb-new" class="btn btn-white !min-h-[44px] !px-5 !text-[13px] shrink-0"><span>View →</span></button>
+        </div>
+      </div>
+      <p class="tick text-faint mt-3 flex justify-between"><span>FIG. 01 — TITANIUM, STUDIO LIGHT</span><span class="hidden sm:inline">SCROLL FOR DEPTH ↓</span></p>
+    </div>
+  </div>
+
+  <!-- marquee -->
+  <div class="marquee mt-8 relative z-20" aria-hidden="true">
+    <div class="marquee-track py-3.5 font-grotesk font-semibold text-[13px] tracking-[.18em] text-muted" id="marquee-track">
+      <!-- duplicated by JS -->
+      <span class="px-6">IPHONE 15 PRO MAX <span style="color:#00FF2B">•</span> IPHONE 15 <span style="color:#00FF2B">•</span> IPHONE 14 PRO <span style="color:#00FF2B">•</span> IPHONE 14 <span style="color:#00FF2B">•</span> IPHONE 13 PRO <span style="color:#00FF2B">•</span> IPHONE 13 <span style="color:#00FF2B">•</span> IPHONE 12 <span style="color:#00FF2B">•</span> BRAND NEW <span style="color:#00FF2B">•</span> UK USED <span style="color:#00FF2B">•</span> WHATSAPP-FIRST <span style="color:#00FF2B">•</span>&nbsp;</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. IMMEDIATE DISCOVERY ============ -->
+<section id="discover" class="relative py-20 md:py-28" aria-label="Immediate iPhone discovery">
+  <div class="max-w-[1440px] mx-auto px-5 md:px-10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+      <div>
+        <p class="num mb-4">( 01 ) — IMMEDIATE DISCOVERY</p>
+        <h2 class="display text-[11vw] sm:text-5xl md:text-7xl">Start with<br><span class="text-muted font-medium">what's ready</span> <span class="inline-block w-3 h-3 rounded-full align-middle" style="background:#00FF2B; box-shadow:0 0 14px #00FF2B"></span></h2>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+        <div class="relative">
+          <input id="quick-search" type="search" placeholder="Search model, e.g. 14 Pro…" class="inp !min-h-[48px] !w-[260px] max-w-full pr-10" aria-label="Quick search iPhones">
+          <svg class="absolute right-4 top-1/2 -translate-y-1/2 text-faint" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </div>
+        <div class="flex gap-2">
+          <button id="strip-prev" class="w-[48px] h-[48px] border border-line rounded-[2px] hover:border-white transition-colors text-lg" aria-label="Scroll products left">←</button>
+          <button id="strip-next" class="w-[48px] h-[48px] border border-line rounded-[2px] hover:border-white transition-colors text-lg" aria-label="Scroll products right">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-2.5 overflow-x-auto pb-2 drag-scroll" id="quick-filters" role="tablist" aria-label="Quick filters">
+      <button class="chip active shrink-0" data-qf="all" role="tab" aria-selected="true">All ready now</button>
+      <button class="chip shrink-0" data-qf="Brand New" role="tab" aria-selected="false">Brand New</button>
+      <button class="chip shrink-0" data-qf="UK Used" role="tab" aria-selected="false">UK Used</button>
+      <button class="chip shrink-0" data-qf="Pro" role="tab" aria-selected="false">Pro models</button>
+      <button class="chip shrink-0" data-qf="under900" role="tab" aria-selected="false">Under ₦900k</button>
+    </div>
+  </div>
+  <div class="mt-6 relative">
+    <div id="strip" class="flex gap-4 overflow-x-auto px-5 md:px-10 pb-4 snap-x snap-mandatory drag-scroll max-w-[1440px] mx-auto" style="scroll-behavior:smooth;" aria-live="polite"></div>
+    <div class="max-w-[1440px] mx-auto px-5 md:px-10 mt-3 flex items-center justify-between">
+      <p class="tick text-faint" id="strip-count">8 DEVICES • DRAG OR SWIPE →</p>
+      <a href="#catalogue" class="tick text-white underline underline-offset-4 hover:text-[#00FF2B] transition-colors">OPEN FULL CATALOGUE ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. FEATURED DEVICE STORY ============ -->
+<section id="story" class="relative py-10 md:py-16 border-t border-line" aria-label="Featured device story">
+  <div class="max-w-[1440px] mx-auto px-5 md:px-10 grid lg:grid-cols-2 gap-10 lg:gap-16">
+    <div class="sticky-img self-start hidden lg:block">
+      <p class="num mb-5">( 02 ) — DEVICE STORY / 001</p>
+      <div class="reveal-img relative overflow-hidden rounded-[4px] border border-line" data-reveal style="aspect-ratio:4/5;">
+        <img data-parallax src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=1400&auto=format&fit=crop" alt="Close-up of iPhone in blue titanium finish" class="w-full h-[115%] object-cover img-premium scale-110" loading="lazy" width="1000" height="1250" onerror="imgFail(this)">
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(0,0,0,.55), transparent 50%);"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-8 flex items-end justify-between">
+          <div><p class="eyebrow text-white/70 mb-2">TITANIUM • A17 PRO • 48MP</p><p class="font-grotesk font-bold text-3xl">15 Pro Max</p></div>
+          <span class="font-grotesk text-6xl outline-text opacity-60">01</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-3 mt-3">
+        <div class="border border-line rounded-[3px] overflow-hidden aspect-square"><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=600&auto=format&fit=crop" alt="iPhone camera detail" class="w-full h-full object-cover img-premium hover:scale-105 transition-transform duration-700" loading="lazy" onerror="imgFail(this)"></div>
+        <div class="border border-line rounded-[3px] overflow-hidden aspect-square"><img src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?q=80&w=600&auto=format&fit=crop" alt="iPhone edge detail" class="w-full h-full object-cover img-premium hover:scale-105 transition-transform duration-700" loading="lazy" onerror="imgFail(this)"></div>
+        <div class="border border-line rounded-[3px] overflow-hidden aspect-square bg-elevated flex flex-col items-center justify-center p-3 text-center"><p class="price text-lg">₦1,850,000</p><p class="tick text-faint mt-1">ADMIN PRICE</p></div>
+      </div>
+    </div>
+    <div class="py-2">
+      <p class="num mb-5 lg:hidden">( 02 ) — DEVICE STORY / 001</p>
+      <div class="lg:hidden mb-8 -mx-5 px-5"><div class="rounded-[4px] overflow-hidden border border-line aspect-[4/4.6]"><img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=1000&auto=format&fit=crop" alt="iPhone 15 Pro" class="w-full h-full object-cover img-premium" loading="lazy" onerror="imgFail(this)"></div></div>
+      <p class="eyebrow text-faint mb-4">SAME RECORD AS CATALOGUE • SLUG: /products/iphone-15-pro-max-256gb-new</p>
+      <h2 class="display text-[12vw] sm:text-6xl xl:text-7xl mb-6">The one<br>everyone<br><span class="outline-text">asks for.</span></h2>
+      <p class="text-muted text-[16px] leading-relaxed max-w-[520px] mb-10">This is our most requested iPhone. Not because of hype — because it holds value, shoots beautifully, and feels right for years. Here's how we talk about it in-store.</p>
+      <div class="space-y-10 max-w-[560px]">
+        <div class="chapter active" data-chapter>
+          <p class="eyebrow text-faint mb-2">CHAPTER — 01 / BUILD</p>
+          <h3 class="font-grotesk font-bold text-2xl mb-3">Titanium that means business.</h3>
+          <p class="text-muted text-[15px] leading-relaxed">Lighter in hand, tougher in daily Lagos life. The Natural Titanium finish hides micro-marks and looks expensive without trying. This is the colour clients re-order.</p>
+        </div>
+        <div class="chapter" data-chapter>
+          <p class="eyebrow text-faint mb-2">CHAPTER — 02 / CAMERA</p>
+          <h3 class="font-grotesk font-bold text-2xl mb-3">A camera you’ll actually use.</h3>
+          <p class="text-muted text-[15px] leading-relaxed">48MP main, 5x telephoto, night mode that saves low-light events. For creators, vendors, and anyone selling on Instagram — this lens pays for itself.</p>
+        </div>
+        <div class="chapter" data-chapter>
+          <p class="eyebrow text-faint mb-2">CHAPTER — 03 / OWNERSHIP</p>
+          <h3 class="font-grotesk font-bold text-2xl mb-3">Buy it the Skytech way.</h3>
+          <p class="text-muted text-[15px] leading-relaxed">See real photos on WhatsApp, confirm storage and condition, then pickup or arrange delivery. Pay on confirmation. Simple, traceable, human.</p>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3 mt-10">
+        <button data-open-product="iphone-15-pro-max-256gb-new" class="btn btn-white !min-h-[56px]"><span>View this iPhone — ₦1,850,000</span></button>
+        <a href="#" data-wa="Hello Skytech! I'm interested in the iPhone 15 Pro Max 256GB (Brand New) from your /iphone spotlight. Is it available?" class="btn btn-ghost !min-h-[56px] wa-link"><span>Enquire on WhatsApp</span></a>
+      </div>
+      <p class="tick text-faint mt-4">PRICE & AVAILABILITY PULLED FROM ADMIN CATALOGUE • NO ONLINE PAYMENT</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. CATALOGUE ============ -->
+<section id="catalogue" class="relative py-20 md:py-28 border-t border-line bg-[#0c0c0c]" aria-label="iPhone catalogue">
+  <div class="max-w-[1440px] mx-auto px-5 md:px-10">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-4">
+      <div>
+        <p class="num mb-4">( 03 ) — THE CATALOGUE • ADMIN-MANAGED</p>
+        <h2 class="display text-[11vw] sm:text-5xl md:text-7xl">Every iPhone.<br><span class="text-muted font-medium">Nothing else.</span></h2>
+      </div>
+      <p class="text-muted max-w-[380px] text-[15px] leading-relaxed">This grid is powered by your existing products, images, prices and slugs. Edit once in admin — it updates here, in discovery, and in stories.</p>
+    </div>
+
+    <!-- toolbar -->
+    <div class="sticky top-[72px] z-30 -mx-5 md:-mx-10 px-5 md:px-10 py-4 bg-[#0c0c0c]/92 backdrop-blur-xl border-y border-line mt-8" style="background:rgba(12,12,12,.92)">
+      <div class="flex flex-col md:flex-row gap-3 md:items-center md:justify-between max-w-[1440px] mx-auto">
+        <div class="flex gap-2 overflow-x-auto drag-scroll pb-1 md:pb-0" id="cat-filters" role="tablist" aria-label="Filter by condition">
+          <button class="chip active shrink-0" data-cf="all" role="tab" aria-selected="true">All</button>
+          <button class="chip shrink-0" data-cf="Brand New" role="tab" aria-selected="false">Brand New</button>
+          <button class="chip shrink-0" data-cf="UK Used" role="tab" aria-selected="false">UK Used</button>
+          <button class="chip shrink-0" data-cf="Pro" role="tab" aria-selected="false">Pro / Pro Max</button>
+        </div>
+        <div class="flex gap-2.5">
+          <div class="relative flex-1 md:flex-none">
+            <input id="cat-search" type="search" placeholder="Search catalogue…" class="inp !min-h-[44px] md:!w-[220px]" aria-label="Search catalogue">
+          </div>
+          <select id="cat-sort" class="inp !min-h-[44px] !w-auto pr-10 text-[14px]" aria-label="Sort catalogue">
+            <option value="featured">Featured</option>
+            <option value="low">Price: Low → High</option>
+            <option value="high">Price: High → Low</option>
+            <option value="az">Name: A → Z</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between mt-6 mb-6">
+      <p class="tick text-faint" id="cat-count" aria-live="polite">LOADING CATALOGUE…</p>
+      <p class="tick text-faint hidden sm:block">SOURCE: /api/products?category=iphone</p>
+    </div>
+
+    <div id="cat-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" aria-live="polite"></div>
+
+    <!-- states -->
+    <div id="cat-empty" class="hidden text-center py-20 border border-dashed border-line rounded-[4px] mt-2">
+      <p class="font-grotesk font-bold text-3xl mb-3">Nothing matches that filter.</p>
+      <p class="text-muted mb-6">Try clearing search — or ask us on WhatsApp, new stock lands often.</p>
+      <div class="flex justify-center gap-3 flex-wrap">
+        <button id="cat-reset" class="btn btn-white !min-h-[48px]"><span>Clear filters</span></button>
+        <a href="#" data-wa="Hello Skytech! I didn't find the iPhone I want on /iphone. Do you have it or can you source it?" class="btn btn-ghost !min-h-[48px] wa-link"><span>Ask on WhatsApp</span></a>
+      </div>
+    </div>
+    <div id="cat-error" class="hidden text-center py-20 border border-line rounded-[4px] bg-elevated mt-2">
+      <p class="eyebrow mb-3" style="color:#00FF2B">● NETWORK ERROR</p>
+      <p class="font-grotesk font-bold text-3xl mb-3">Catalogue didn't load.</p>
+      <p class="text-muted mb-6">Check your connection. Your products are safe in admin.</p>
+      <button id="cat-retry" class="btn btn-white !min-h-[48px]"><span>Retry loading</span></button>
+    </div>
+
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 border border-line rounded-[3px] p-5 bg-elevated">
+      <p class="text-[14px] text-muted text-center sm:text-left">Can't decide? Send your budget on WhatsApp — we'll reply with <span class="text-white font-medium">2–3 honest options</span> from this same catalogue.</p>
+      <a href="#" data-wa="Hello Skytech! My budget is ____. What iPhones do you have for me on /iphone?" class="btn btn-green !min-h-[48px] shrink-0 wa-link"><span>Send budget on WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. SECOND EDITORIAL MOMENT ============ -->
+<section id="moment" class="relative border-t border-line overflow-hidden" aria-label="Editorial device moment">
+  <div class="relative h-[92vh] min-h-[620px] overflow-hidden">
+    <img data-parallax-full src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?q=80&w=2000&auto=format&fit=crop" alt="iPhone photographed at night showing premium build" class="absolute inset-0 w-full h-[120%] object-cover img-premium" loading="lazy" onerror="imgFail(this)">
+    <div class="absolute inset-0" style="background:linear-gradient(to bottom, rgba(10,10,10,.85) 0%, rgba(10,10,10,.25) 40%, rgba(10,10,10,.88) 100%);"></div>
+    <div class="absolute inset-0" style="background:radial-gradient(60% 40% at 50% 85%, rgba(6,116,24,.35), transparent 70%)"></div>
+    <div class="relative z-10 h-full max-w-[1440px] mx-auto px-5 md:px-10 flex flex-col justify-between py-16">
+      <div class="flex justify-between items-start">
+        <p class="eyebrow text-white/70">( 04 ) — FULL-WIDTH MOMENT</p>
+        <p class="tick text-white/60 hidden sm:block">SHOT IN LOW LIGHT • NO RETOUCH NEEDED</p>
+      </div>
+      <div class="text-center">
+        <p class="eyebrow mb-5 text-white/70">UK USED, DONE WITH DIGNITY</p>
+        <h2 class="display text-[13vw] md:text-[8vw] leading-[.9]">Detail is<br><span class="outline-text">the difference.</span></h2>
+        <p class="text-white/70 max-w-[520px] mx-auto mt-6 text-[15.5px] leading-relaxed">Every UK Used iPhone is photographed as-is. What you see on WhatsApp is what you get in hand. No surprises, no stories.</p>
+        <div class="flex justify-center gap-3 mt-8 flex-wrap">
+          <button data-cat-jump="UK Used" class="btn btn-white !min-h-[54px]"><span>Shop UK Used</span></button>
+          <button data-open-product="iphone-14-pro-max-256gb-used" class="btn btn-ghost !min-h-[54px] !border-white/30"><span>See 14 Pro Max — ₦1,150,000</span></button>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-3 max-w-[720px] mx-auto w-full">
+        <div class="border border-white/15 bg-black/40 backdrop-blur rounded-[3px] overflow-hidden aspect-[4/3]"><img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?q=80&w=600&auto=format&fit=crop" alt="iPhone back glass detail" class="w-full h-full object-cover img-premium" loading="lazy" onerror="imgFail(this)"></div>
+        <div class="border border-white/15 bg-black/40 backdrop-blur rounded-[3px] overflow-hidden aspect-[4/3]"><img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?q=80&w=600&auto=format&fit=crop" alt="iPhone in hand showing scale" class="w-full h-full object-cover img-premium" loading="lazy" onerror="imgFail(this)"></div>
+        <div class="border border-white/15 bg-black/40 backdrop-blur rounded-[3px] overflow-hidden aspect-[4/3]"><img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=600&auto=format&fit=crop" alt="iPhone in dark studio light" class="w-full h-full object-cover img-premium" loading="lazy" onerror="imgFail(this)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. BRAND NEW VS UK USED ============ -->
+<section id="compare" class="py-20 md:py-28 border-t border-line" aria-label="Brand New versus UK Used">
+  <div class="max-w-[1240px] mx-auto px-5 md:px-10">
+    <p class="num mb-4 text-center">( 05 ) — HONEST GUIDANCE</p>
+    <h2 class="display text-[11vw] sm:text-5xl md:text-6xl text-center">New <span class="text-faint font-medium">or</span> UK Used<span style="color:#00FF2B">?</span></h2>
+    <p class="text-muted text-center max-w-[560px] mx-auto mt-5 text-[15.5px] leading-relaxed">Both deserve respect. Here's factual guidance to help you choose — then filter the catalogue with one tap.</p>
+
+    <div class="grid md:grid-cols-2 gap-4 mt-12">
+      <!-- new -->
+      <article class="compare-panel border border-line rounded-[4px] overflow-hidden bg-elevated">
+        <div class="aspect-[16/9] overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1696446701796-da61225697cc?q=80&w=1000&auto=format&fit=crop" alt="Sealed Brand New iPhone box" class="w-full h-full object-cover img-premium hover:scale-105 transition-transform duration-[1.2s]" loading="lazy" onerror="imgFail(this)" data-fallback="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=1000&auto=format&fit=crop">
+          <span class="absolute top-4 left-4 cond cond-new">Brand New</span>
+        </div>
+        <div class="p-7 md:p-9">
+          <h3 class="font-grotesk font-bold text-3xl tracking-tight mb-2">Factory sealed.<br>First hands.</h3>
+          <p class="text-muted text-[15px] leading-relaxed mb-7">Unopened, latest stock. Best if you want untouched battery cycles and full box contents as supplied.</p>
+          <ul class="space-y-3.5 text-[14.5px] mb-8">
+            <li class="flex gap-3"><span class="text-white font-bold">—</span><span class="text-white/85">Sealed in box, as received from supply</span></li>
+            <li class="flex gap-3"><span class="text-white font-bold">—</span><span class="text-white/85">Latest models &amp; colours more likely available</span></li>
+            <li class="flex gap-3"><span class="text-white font-bold">—</span><span class="text-white/85">Higher upfront cost, maximum peace of mind</span></li>
+            <li class="flex gap-3"><span class="text-white font-bold">—</span><span class="text-white/85">Good for gifts &amp; long-term first ownership</span></li>
+          </ul>
+          <button data-cat-jump="Brand New" class="btn btn-white w-full !min-h-[54px]"><span>Show Brand New only</span></button>
+        </div>
+      </article>
+      <!-- used -->
+      <article class="compare-panel border border-line rounded-[4px] overflow-hidden bg-[#0e0e0e]">
+        <div class="aspect-[16/9] overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=1000&auto=format&fit=crop" alt="UK Used iPhone showing honest condition" class="w-full h-full object-cover img-premium hover:scale-105 transition-transform duration-[1.2s]" loading="lazy" onerror="imgFail(this)">
+          <span class="absolute top-4 left-4 cond cond-used">UK Used</span>
+        </div>
+        <div class="p-7 md:p-9">
+          <h3 class="font-grotesk font-bold text-3xl tracking-tight mb-2">Tested value.<br>Smart money.</h3>
+          <p class="text-muted text-[15px] leading-relaxed mb-7">Pre-owned, graded honestly with real photos on WhatsApp. Best if you want more iPhone for less money.</p>
+          <ul class="space-y-3.5 text-[14.5px] mb-8">
+            <li class="flex gap-3"><span style="color:#00FF2B" class="font-bold">—</span><span class="text-white/85">Same catalogue record — condition clearly labelled</span></li>
+            <li class="flex gap-3"><span style="color:#00FF2B" class="font-bold">—</span><span class="text-white/85">Confirm exact unit photos before you commit</span></li>
+            <li class="flex gap-3"><span style="color:#00FF2B" class="font-bold">—</span><span class="text-white/85">Lower price for higher-tier models (Pro / Pro Max)</span></li>
+            <li class="flex gap-3"><span style="color:#00FF2B" class="font-bold">—</span><span class="text-white/85">Good for upgrades, second phones &amp; creators</span></li>
+          </ul>
+          <button data-cat-jump="UK Used" class="btn btn-ghost w-full !min-h-[54px]"><span>Show UK Used only</span></button>
+        </div>
+      </article>
+    </div>
+    <p class="tick text-faint text-center mt-6">NO INVENTED WARRANTIES OR BATTERY PROMISES HERE — ASK US ANYTHING ON WHATSAPP AND WE'LL ANSWER FACTUALLY.</p>
+  </div>
+</section>
+
+<!-- ============ 7. WHY SKYTECH ============ -->
+<section id="why" class="py-20 md:py-28 border-t border-line bg-[#0c0c0c]" aria-label="Why Skytech">
+  <div class="max-w-[1240px] mx-auto px-5 md:px-10">
+    <div class="grid lg:grid-cols-12 gap-8 mb-12">
+      <div class="lg:col-span-7">
+        <p class="num mb-4">( 06 ) — WHY SKYTECH</p>
+        <h2 class="display text-[11vw] sm:text-5xl md:text-6xl">A hub,<br>not a <span class="outline-text">hustle.</span></h2>
+      </div>
+      <div class="lg:col-span-5 flex items-end">
+        <p class="text-muted text-[15.5px] leading-relaxed">We built this page to feel like walking into our store: devices in hand, straight answers, no pressure. Tap any row.</p>
+      </div>
+    </div>
+    <div id="why-list">
+      <div class="why-row open py-7 grid md:grid-cols-12 gap-4 items-start px-2 md:px-6" data-img="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=600&auto=format&fit=crop" tabindex="0" role="button" aria-expanded="true">
+        <span class="font-grotesk text-faint md:col-span-1">01</span>
+        <h3 class="font-grotesk font-bold text-2xl md:text-3xl tracking-tight md:col-span-6">Physical hub you can actually visit</h3>
+        <p class="text-muted text-[14.5px] md:col-span-4 why-detail md:!max-h-none md:!opacity-100">Come see the exact unit, hold it, compare two side-by-side. Or start on WhatsApp and finish in-store — your choice.</p>
+        <span class="plus text-2xl md:col-span-1 text-right md:hidden">+</span>
+      </div>
+      <div class="why-row py-7 grid md:grid-cols-12 gap-4 items-start px-2 md:px-6" data-img="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=600&auto=format&fit=crop" tabindex="0" role="button" aria-expanded="false">
+        <span class="font-grotesk text-faint md:col-span-1">02</span>
+        <h3 class="font-grotesk font-bold text-2xl md:text-3xl tracking-tight md:col-span-6">Devices listed with real details</h3>
+        <p class="text-muted text-[14.5px] md:col-span-4 why-detail md:!max-h-none md:!opacity-100">Model, storage, colour and condition come straight from our admin catalogue. What you tap is what we discuss on WhatsApp.</p>
+        <span class="plus text-2xl md:col-span-1 text-right md:hidden">+</span>
+      </div>
+      <div class="why-row py-7 grid md:grid-cols-12 gap-4 items-start px-2 md:px-6" data-img="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=600&auto=format&fit=crop" tabindex="0" role="button" aria-expanded="false">
+        <span class="font-grotesk text-faint md:col-span-1">03</span>
+        <h3 class="font-grotesk font-bold text-2xl md:text-3xl tracking-tight md:col-span-6">WhatsApp-first, human always</h3>
+        <p class="text-muted text-[14.5px] md:col-span-4 why-detail md:!max-h-none md:!opacity-100">No carts, no failed payments. Every enquiry opens a chat with a real person who can send photos, video, and location.</p>
+        <span class="plus text-2xl md:col-span-1 text-right md:hidden">+</span>
+      </div>
+      <div class="why-row py-7 grid md:grid-cols-12 gap-4 items-start px-2 md:px-6" data-img="https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=600&auto=format&fit=crop" tabindex="0" role="button" aria-expanded="false">
+        <span class="font-grotesk text-faint md:col-span-1">04</span>
+        <h3 class="font-grotesk font-bold text-2xl md:text-3xl tracking-tight md:col-span-6">Straight talk after you buy</h3>
+        <p class="text-muted text-[14.5px] md:col-span-4 why-detail md:!max-h-none md:!opacity-100">Setup help, accessory guidance, repair enquiries — message the same number. We stay reachable.</p>
+        <span class="plus text-2xl md:col-span-1 text-right md:hidden">+</span>
+      </div>
+    </div>
+  </div>
+  <div id="why-float" aria-hidden="true"><img src="" alt="" class="w-full h-full object-cover"></div>
+</section>
+
+<!-- ============ 8. REPAIR ============ -->
+<section id="repair" class="py-20 md:py-28 border-t border-line relative overflow-hidden" aria-label="Repair enquiry">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(50% 35% at 15% 20%, rgba(255,255,255,.05), transparent 70%)"></div>
+  <div class="max-w-[1240px] mx-auto px-5 md:px-10 grid lg:grid-cols-2 gap-12 relative">
+    <div>
+      <p class="num mb-4">( 07 ) — TECHNICAL CHAPTER • QUIET</p>
+      <h2 class="display text-[11vw] sm:text-5xl md:text-6xl">Cracked?<br>Draining?<br><span class="text-muted font-medium">Let's talk.</span></h2>
+      <p class="text-muted mt-6 max-w-[460px] text-[15.5px] leading-relaxed">Tell us what's wrong in your own words. This sends an <span class="text-white">enquiry on WhatsApp</span> — we'll discuss what's possible from there. No guaranteed services or prices listed here.</p>
+      <ol class="mt-10 space-y-0 max-w-[460px]">
+        <li class="flex gap-5 py-5 border-t border-line"><span class="font-mono text-[12px] text-faint pt-1">STEP 1</span><p class="text-[15px]"><span class="font-semibold">Pick your issue below.</span> <span class="text-muted">Screen, battery, charging, camera, software, or something else.</span></p></li>
+        <li class="flex gap-5 py-5 border-t border-line"><span class="font-mono text-[12px] text-faint pt-1">STEP 2</span><p class="text-[15px]"><span class="font-semibold">Describe it briefly.</span> <span class="text-muted">When it started, what you see. Photos help on WhatsApp.</span></p></li>
+        <li class="flex gap-5 py-5 border-y border-line"><span class="font-mono text-[12px] text-faint pt-1">STEP 3</span><p class="text-[15px]"><span class="font-semibold">Tap “Ask about a repair”.</span> <span class="text-muted">Your message is pre-written. Just send.</span></p></li>
+      </ol>
+      <div class="mt-8 flex items-center gap-4 max-w-[460px]">
+        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=400&auto=format&fit=crop" alt="Technician tools" class="w-20 h-20 object-cover rounded-[3px] border border-line img-premium" loading="lazy" onerror="this.style.display='none'">
+        <p class="tick text-faint leading-relaxed">REPAIR ENQUIRIES ARE<br>HANDLED 1-ON-1 ON WHATSAPP<br>— NO ONLINE BOOKING NEEDED</p>
+      </div>
+    </div>
+    <div class="bg-elevated border border-line rounded-[4px] p-6 md:p-9 self-start lg:sticky lg:top-[96px]">
+      <p class="eyebrow text-faint mb-6">REPAIR ENQUIRY FORM → WHATSAPP</p>
+      <label class="block mb-5"><span class="tick text-muted block mb-2">YOUR NAME</span><input id="r-name" class="inp" type="text" placeholder="e.g. Adaeze" autocomplete="name"></label>
+      <label class="block mb-5"><span class="tick text-muted block mb-2">IPHONE MODEL</span>
+        <select id="r-model" class="inp">
+          <option>iPhone 15 Pro Max</option><option>iPhone 15 Pro</option><option>iPhone 15</option><option>iPhone 14 Pro Max</option><option>iPhone 14 Pro</option><option>iPhone 14</option><option>iPhone 13 Pro / Pro Max</option><option>iPhone 13</option><option>iPhone 12 series</option><option>iPhone 11 series</option><option>Older / Not sure</option>
+        </select>
+      </label>
+      <span class="tick text-muted block mb-3">WHAT'S THE PROBLEM? (TAP ALL THAT APPLY)</span>
+      <div class="flex flex-wrap gap-2 mb-5" id="r-issues" role="group" aria-label="Repair issues">
+        <button class="chip issue" data-issue="Screen cracked / display problem">Screen / display</button>
+        <button class="chip issue" data-issue="Battery draining fast">Battery draining</button>
+        <button class="chip issue" data-issue="Not charging properly">Not charging</button>
+        <button class="chip issue" data-issue="Camera issue">Camera</button>
+        <button class="chip issue" data-issue="Software / update issue">Software</button>
+        <button class="chip issue" data-issue="Something else">Something else</button>
+      </div>
+      <label class="block mb-6"><span class="tick text-muted block mb-2">DESCRIBE IT (OPTIONAL)</span><textarea id="r-desc" class="inp" placeholder="e.g. Screen cracked after a fall yesterday. Touch still works but there are lines…"></textarea></label>
+      <div class="bg-[#0A0A0A] border border-line rounded-[3px] p-4 mb-5">
+        <p class="tick text-faint mb-2">MESSAGE PREVIEW</p>
+        <p id="r-preview" class="text-[13.5px] text-muted leading-relaxed">Hello Skytech! I'd like to ask about a repair…</p>
+      </div>
+      <a id="r-send" href="#" class="btn btn-white w-full !min-h-[56px] wa-link" data-wa-dynamic="repair"><span>Ask about a repair on WhatsApp</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      <p class="tick text-faint text-center mt-4">ENQUIRY ONLY — WE'LL REPLY WITH NEXT STEPS</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. TESTIMONIALS (PLACEHOLDERS DISCLOSED) ============ -->
+<section id="voices" class="py-20 md:py-28 border-t border-line bg-[#0c0c0c]" aria-label="Customer voices">
+  <div class="max-w-[1240px] mx-auto px-5 md:px-10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-4">
+      <div>
+        <p class="num mb-4">( 08 ) — VOICES</p>
+        <h2 class="display text-[11vw] sm:text-5xl md:text-6xl">Word on<br>the street<span style="color:#00FF2B">.</span></h2>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="placeholder-badge">● PLACEHOLDERS — CONNECT REAL REVIEWS</span>
+      </div>
+    </div>
+    <p class="text-faint text-[13.5px] max-w-[640px] mb-10">We don't invent reviews, ratings or statistics. The quotes below are <span class="text-muted underline underline-offset-4">layout placeholders</span> — replace with verified customer messages when available.</p>
+    <div class="grid md:grid-cols-3 gap-px bg-line border border-line rounded-[4px] overflow-hidden">
+      <figure class="bg-[#0A0A0A] p-8 flex flex-col justify-between min-h-[320px] opacity-80">
+        <div><span class="placeholder-badge mb-5 inline-block">DRAFT 01</span><div class="quote-mark mt-4">“</div><blockquote class="font-grotesk text-xl leading-snug mt-2">Got my 14 Pro Max in two days. Exact unit from the video they sent. No story.</blockquote></div>
+        <figcaption class="mt-8 pt-6 border-t border-line"><p class="font-semibold text-[14px]">— Placeholder Customer</p><p class="tick text-faint mt-1">Lagos • UK USED • TO BE VERIFIED</p></figcaption>
+      </figure>
+      <figure class="bg-elevated p-8 flex flex-col justify-between min-h-[320px] opacity-80">
+        <div><span class="placeholder-badge mb-5 inline-block">DRAFT 02</span><div class="quote-mark mt-4">“</div><blockquote class="font-grotesk text-xl leading-snug mt-2">They told me NOT to buy the more expensive one. Who does that? Customer for life.</blockquote></div>
+        <figcaption class="mt-8 pt-6 border-t border-line"><p class="font-semibold text-[14px]">— Placeholder Customer</p><p class="tick text-faint mt-1">Abuja • BRAND NEW • TO BE VERIFIED</p></figcaption>
+      </figure>
+      <figure class="bg-[#0A0A0A] p-8 flex flex-col justify-between min-h-[320px] opacity-80">
+        <div><span class="placeholder-badge mb-5 inline-block">DRAFT 03</span><div class="quote-mark mt-4">“</div><blockquote class="font-grotesk text-xl leading-snug mt-2">Screen issue sorted over chat, then fixed same day in-store. Sharp people.</blockquote></div>
+        <figcaption class="mt-8 pt-6 border-t border-line"><p class="font-semibold text-[14px]">— Placeholder Customer</p><p class="tick text-faint mt-1">Ikeja • REPAIR • TO BE VERIFIED</p></figcaption>
+      </figure>
+    </div>
+    <div class="mt-6 text-center">
+      <a href="#" data-wa="Hello Skytech! I bought from you and want to leave feedback for your /iphone page." class="btn btn-ghost !min-h-[50px] wa-link"><span>Bought from us? Share feedback on WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. FAQ ============ -->
+<section id="faq" class="py-20 md:py-28 border-t border-line" aria-label="Frequently asked questions">
+  <div class="max-w-[1240px] mx-auto px-5 md:px-10 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-4">
+      <div class="lg:sticky lg:top-[96px]">
+        <p class="num mb-4">( 09 ) — QUESTIONS</p>
+        <h2 class="display text-[11vw] sm:text-5xl">Before<br>you ask<span style="color:#00FF2B">.</span></h2>
+        <p class="text-muted mt-5 text-[15px] leading-relaxed">Straight answers. Anything else — one tap and we're chatting.</p>
+        <a href="#" data-wa="Hello Skytech! I have a question about iPhones on your /iphone page." class="btn btn-white mt-7 wa-link"><span>Ask on WhatsApp</span></a>
+      </div>
+    </div>
+    <div class="lg:col-span-8" id="faq-list">
+      <div class="faq-item open">
+        <button class="w-full flex items-center justify-between gap-4 py-6 text-left min-h-[44px]" aria-expanded="true"><span class="font-grotesk font-bold text-lg md:text-xl tracking-tight">How do I buy an iPhone from this page?</span><span class="faq-icon w-[40px] h-[40px] shrink-0 border border-line rounded-full flex items-center justify-center text-xl">+</span></button>
+        <div class="faq-a"><p class="text-muted text-[15px] leading-relaxed pb-7 pr-4">Tap any iPhone, then “Enquire on WhatsApp”. You'll chat with us to confirm the exact unit, price and pickup or delivery. There's no online checkout or payment on this page.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="w-full flex items-center justify-between gap-4 py-6 text-left min-h-[44px]" aria-expanded="false"><span class="font-grotesk font-bold text-lg md:text-xl tracking-tight">What's the difference between Brand New and UK Used?</span><span class="faq-icon w-[40px] h-[40px] shrink-0 border border-line rounded-full flex items-center justify-center text-xl">+</span></button>
+        <div class="faq-a"><p class="text-muted text-[15px] leading-relaxed pb-7 pr-4">Brand New means sealed, first-hand stock. UK Used means pre-owned and honestly graded — we'll share real photos of the exact unit on WhatsApp so you can judge condition yourself before committing.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="w-full flex items-center justify-between gap-4 py-6 text-left min-h-[44px]" aria-expanded="false"><span class="font-grotesk font-bold text-lg md:text-xl tracking-tight">Are prices on this page final?</span><span class="faq-icon w-[40px] h-[40px] shrink-0 border border-line rounded-full flex items-center justify-center text-xl">+</span></button>
+        <div class="faq-a"><p class="text-muted text-[15px] leading-relaxed pb-7 pr-4">Prices shown come from our admin-managed catalogue and are updated there. Always confirm the current price and availability on WhatsApp before pickup or delivery.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="w-full flex items-center justify-between gap-4 py-6 text-left min-h-[44px]" aria-expanded="false"><span class="font-grotesk font-bold text-lg md:text-xl tracking-tight">Can I see the exact phone before paying?</span><span class="faq-icon w-[40px] h-[40px] shrink-0 border border-line rounded-full flex items-center justify-center text-xl">+</span></button>
+        <div class="faq-a"><p class="text-muted text-[15px] leading-relaxed pb-7 pr-4">Yes. We send photos and, where possible, video of the actual unit on WhatsApp. You can also visit our hub to inspect in person. Payment is confirmed with us directly — not through this website.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="w-full flex items-center justify-between gap-4 py-6 text-left min-h-[44px]" aria-expanded="false"><span class="font-grotesk font-bold text-lg md:text-xl tracking-tight">Do you do repairs?</span><span class="faq-icon w-[40px] h-[40px] shrink-0 border border-line rounded-full flex items-center justify-center text-xl">+</span></button>
+        <div class="faq-a"><p class="text-muted text-[15px] leading-relaxed pb-7 pr-4">Use the repair enquiry form above to describe your issue — screen, battery, charging, camera, software or other. We'll reply on WhatsApp to discuss next steps. We don't list repair prices or guarantees here.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="w-full flex items-center justify-between gap-4 py-6 text-left min-h-[44px]" aria-expanded="false"><span class="font-grotesk font-bold text-lg md:text-xl tracking-tight">I don't see the model I want. Can you source it?</span><span class="faq-icon w-[40px] h-[40px] shrink-0 border border-line rounded-full flex items-center justify-center text-xl">+</span></button>
+        <div class="faq-a"><p class="text-muted text-[15px] leading-relaxed pb-7 pr-4">Quite possibly. Message us your exact model, storage and budget on WhatsApp and we'll tell you honestly what's available or when to check back. New stock is added via our admin catalogue.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. FINAL CTA ============ -->
+<section id="final" class="relative border-t border-line overflow-hidden" aria-label="Final call to action">
+  <div class="absolute inset-0">
+    <img data-parallax-full src="https://images.unsplash.com/photo-1556656793-08538906a9f8?q=80&w=2000&auto=format&fit=crop" alt="Hand holding iPhone against city light" class="w-full h-[120%] object-cover img-premium" loading="lazy" onerror="imgFail(this)">
+    <div class="absolute inset-0" style="background:rgba(10,10,10,.78)"></div>
+    <div class="absolute inset-0" style="background:radial-gradient(55% 45% at 50% 60%, rgba(6,116,24,.45), transparent 70%)"></div>
+  </div>
+  <div class="relative z-10 max-w-[1100px] mx-auto px-5 md:px-10 py-28 md:py-40 text-center">
+    <p class="eyebrow text-white/70 mb-6">( 10 ) — FINAL CALL • /IPHONE</p>
+    <h2 class="display text-[13vw] sm:text-6xl md:text-8xl">Your next iPhone<br><span class="outline-text">is waiting.</span></h2>
+    <p class="text-white/70 max-w-[480px] mx-auto mt-7 text-[16px] leading-relaxed">Explore the live catalogue or start a WhatsApp chat now. A real person replies — not a bot, not a form into the void.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-3 mt-10">
+      <a href="#catalogue" class="btn btn-white !min-h-[58px] !px-10 !text-base magnetic"><span>Explore iPhones</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+      <a href="#" data-wa="Hello Skytech! I'm ready. Show me your best available iPhones from /iphone." class="btn btn-ghost !min-h-[58px] !px-10 !text-base !border-white/30 magnetic wa-link"><span>Talk to Skytech now</span></a>
+    </div>
+    <p class="tick text-white/40 mt-8">OPEN TODAY • WHATSAPP REPLIES FASTEST • LAGOS, NIGERIA</p>
+  </div>
+</section>
+</main>
+
+<!-- ============ 12. FOOTER ============ -->
+<footer class="border-t border-line bg-[#080808]" aria-label="Footer">
+  <div class="max-w-[1440px] mx-auto px-5 md:px-10 py-14 grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-4">
+      <p class="font-grotesk font-bold text-2xl">SKYTECH<span style="color:#00FF2B">.</span></p>
+      <p class="eyebrow text-faint mt-1 mb-5">GADGETS HUB — /IPHONE CAMPAIGN</p>
+      <p class="text-muted text-[14px] leading-relaxed max-w-[300px]">Premium Brand New &amp; UK Used iPhones. Physical hub, honest grading, WhatsApp-first buying.</p>
+      <div class="flex gap-2 mt-6">
+        <a href="#" data-wa="Hello Skytech!" class="wa-link w-[44px] h-[44px] border border-line rounded-[2px] flex items-center justify-center hover:border-white transition-colors" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg></a>
+        <a href="#" class="w-[44px] h-[44px] border border-line rounded-[2px] flex items-center justify-center hover:border-white transition-colors" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" class="w-[44px] h-[44px] border border-line rounded-[2px] flex items-center justify-center hover:border-white transition-colors" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1Z"/></svg></a>
+        <a href="#" class="w-[44px] h-[44px] border border-line rounded-[2px] flex items-center justify-center hover:border-white transition-colors" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.4 2 1.8 3.6 4 3.9v3.1c-1.6 0-3-.5-4-1.3v6.5c0 3.4-2.6 6-6 5.8A5.7 5.7 0 0 1 4.3 15C4.6 12 7 10 10 10.2v3.2c-1.4-.3-2.7.6-2.9 2-.2 1.3.8 2.5 2.1 2.6 1.5.1 2.8-1.1 2.8-2.7V3H16Z"/></svg></a>
+      </div>
+    </div>
+    <nav class="md:col-span-2" aria-label="Shop"><p class="eyebrow text-faint mb-5">SHOP</p><ul class="space-y-3.5 text-[14.5px] text-muted"><li><a href="#catalogue" class="hover:text-white">All iPhones</a></li><li><button data-cat-jump="Brand New" class="hover:text-white">Brand New</button></li><li><button data-cat-jump="UK Used" class="hover:text-white">UK Used</button></li><li><a href="#story" class="hover:text-white">Spotlight</a></li></ul></nav>
+    <nav class="md:col-span-2" aria-label="Support"><p class="eyebrow text-faint mb-5">SUPPORT</p><ul class="space-y-3.5 text-[14.5px] text-muted"><li><a href="#repair" class="hover:text-white">Repair enquiry</a></li><li><a href="#faq" class="hover:text-white">FAQ</a></li><li><a href="#compare" class="hover:text-white">New vs Used</a></li><li><a href="#why" class="hover:text-white">Why Skytech</a></li></ul></nav>
+    <div class="md:col-span-4">
+      <p class="eyebrow text-faint mb-5">VISIT / CONTACT</p>
+      <p class="text-[14.5px] text-muted leading-relaxed">Skytech Gadgets Hub<br>Lagos, Nigeria <span class="text-faint">(confirm address on WhatsApp)</span><br>Mon – Sat • 9:00 – 19:00</p>
+      <a href="#" data-wa="Hello Skytech! I'd like your store location and directions." class="btn btn-ghost mt-5 !min-h-[48px] wa-link w-full sm:w-auto"><span>Get location on WhatsApp</span></a>
+    </div>
+  </div>
+  <div class="border-t border-line">
+    <div class="max-w-[1440px] mx-auto px-5 md:px-10 py-5 flex flex-col sm:flex-row justify-between gap-3 items-center">
+      <p class="tick text-faint">© 2026 SKYTECH GADGETS HUB • ALL PRODUCTS EDITABLE VIA ADMIN CATALOGUE</p>
+      <p class="tick text-faint">ROUTE: /iphone → /products/:slug → WHATSAPP • NO ONLINE PAYMENT</p>
+    </div>
+  </div>
+  <div class="h-[76px] md:hidden"></div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div id="stickycta" class="md:hidden" role="region" aria-label="Quick actions">
+  <div class="grid grid-cols-2 gap-2.5">
+    <a href="#catalogue" class="btn btn-white !min-h-[52px] !px-2 !text-[14px]"><span>Explore iPhones</span></a>
+    <a href="#" data-wa="Hello Skytech! I'm on your /iphone page and want to buy." class="btn btn-green !min-h-[52px] !px-2 !text-[14px] wa-link"><span>WhatsApp Us</span></a>
+  </div>
+</div>
+
+<!-- PRODUCT MODAL (simulates /products/:slug) -->
+<div id="pmodal" role="dialog" aria-modal="true" aria-label="Product detail">
+  <div class="backdrop" data-close-modal></div>
+  <div class="panel">
+    <div class="grid md:grid-cols-2">
+      <div class="relative bg-[#0a0a0a] min-h-[300px]">
+        <img id="m-img" src="" alt="" class="w-full h-full object-cover img-premium absolute inset-0 md:relative md:aspect-[4/5]" onerror="imgFail(this)">
+        <span id="m-cond" class="absolute top-4 left-4 cond cond-new">Brand New</span>
+        <button data-close-modal class="md:hidden absolute top-4 right-4 w-[44px] h-[44px] bg-black/60 backdrop-blur border border-white/20 rounded-full text-xl" aria-label="Close">×</button>
+      </div>
+      <div class="p-6 md:p-9">
+        <div class="flex items-start justify-between gap-4">
+          <p class="eyebrow text-faint">CANONICAL ROUTE<br><span id="m-route" class="text-white/80 normal-case tracking-normal font-mono text-[12px]">/products/slug</span></p>
+          <button data-close-modal class="hidden md:flex w-[44px] h-[44px] border border-line rounded-[2px] items-center justify-center text-xl hover:border-white" aria-label="Close detail">×</button>
+        </div>
+        <h3 id="m-name" class="font-grotesk font-bold text-3xl md:text-4xl tracking-tight mt-4">iPhone</h3>
+        <p id="m-sub" class="text-muted mt-2 text-[14.5px]">Storage • Colour • Condition</p>
+        <p id="m-price" class="price text-3xl mt-4">₦0</p>
+        <p class="tick text-faint mt-1">PRICE FROM ADMIN CATALOGUE • CONFIRM ON WHATSAPP</p>
+        <div class="h-line my-6"></div>
+        <div class="grid grid-cols-2 gap-3 text-[13.5px]">
+          <div class="border border-line rounded-[2px] p-3"><p class="tick text-faint mb-1">CONDITION</p><p id="m-c2" class="font-semibold">Brand New</p></div>
+          <div class="border border-line rounded-[2px] p-3"><p class="tick text-faint mb-1">STORAGE</p><p id="m-s2" class="font-semibold">256GB</p></div>
+          <div class="border border-line rounded-[2px] p-3"><p class="tick text-faint mb-1">COLOUR</p><p id="m-col" class="font-semibold">Natural Titanium</p></div>
+          <div class="border border-line rounded-[2px] p-3"><p class="tick text-faint mb-1">STATUS</p><p class="font-semibold flex items-center gap-2"><span class="live-dot"></span> Enquire now</p></div>
+        </div>
+        <p id="m-desc" class="text-muted text-[14.5px] leading-relaxed mt-5">Description from catalogue.</p>
+        <div class="flex flex-col gap-2.5 mt-7">
+          <a id="m-wa" href="#" class="btn btn-green !min-h-[56px] w-full wa-link"><span>Enquire on WhatsApp</span></a>
+          <button data-close-modal class="btn btn-ghost !min-h-[50px] w-full"><span>← Keep exploring</span></button>
+        </div>
+        <p class="tick text-faint text-center mt-4">NO ONLINE PAYMENT — YOU CONTINUE ON WHATSAPP</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast" role="status" aria-live="polite"><span style="color:#067418">●</span><span id="toast-msg">Opening WhatsApp…</span></div>
+
+<script>
+/* ============================================================
+   SKYTECH /iphone — campaign engine
+   Data layer mirrors the EXISTING admin-managed catalogue.
+   In production: fetch('/api/products?category=iphone')
+   ============================================================ */
+const WA_NUMBER = '2348012345678'; // <-- replace with real Skytech WhatsApp number
+const waLink = (msg) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+const fmtNGN = (n) => '₦' + Number(n).toLocaleString('en-NG');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (reducedMotion) document.documentElement.classList.add('no-motion');
+
+function imgFail(el){
+  el.onerror = null;
+  el.src = 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=1000&auto=format&fit=crop';
+  const fb = el.getAttribute('data-fallback');
+  if(fb && !el.dataset.retried){ el.dataset.retried='1'; el.src=fb; }
+}
+window.imgFail = imgFail;
+
+/* ---- Simulated admin catalogue records (same shape as live system) ---- */
+const PRODUCTS = [
+  { slug:'iphone-15-pro-max-256gb-new', name:'iPhone 15 Pro Max', storage:'256GB', colour:'Natural Titanium', condition:'Brand New', price:1850000, featured:1, tag:'Most requested',
+    img:'https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=900&auto=format&fit=crop',
+    desc:'Titanium build, A17 Pro chip and 5x telephoto. Sealed unit from current stock — confirm availability on WhatsApp.' },
+  { slug:'iphone-15-pro-128gb-new', name:'iPhone 15 Pro', storage:'128GB', colour:'Blue Titanium', condition:'Brand New', price:1620000, featured:2,
+    img:'https://images.unsplash.com/photo-1696446701796-da61225697cc?q=80&w=900&auto=format&fit=crop',
+    desc:'Pro power in a lighter titanium frame. Ideal if you want flagship cameras without the Max size.' },
+  { slug:'iphone-15-128gb-new', name:'iPhone 15', storage:'128GB', colour:'Black', condition:'Brand New', price:1180000, featured:3,
+    img:'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=900&auto=format&fit=crop',
+    desc:'Dynamic Island, 48MP camera, USB-C. The sweet spot for most buyers moving from older models.' },
+  { slug:'iphone-14-pro-max-256gb-used', name:'iPhone 14 Pro Max', storage:'256GB', colour:'Deep Purple', condition:'UK Used', price:1150000, featured:4, tag:'Value Pro',
+    img:'https://images.unsplash.com/photo-1591337676887-a217a6970a8a?q=80&w=900&auto=format&fit=crop',
+    desc:'UK Used unit — graded honestly with real photos on request. Big screen, big battery, pro cameras.' },
+  { slug:'iphone-14-128gb-used', name:'iPhone 14', storage:'128GB', colour:'Midnight', condition:'UK Used', price:785000, featured:5,
+    img:'https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?q=80&w=900&auto=format&fit=crop',
+    desc:'Clean UK Used iPhone 14. Great everyday phone — confirm exact unit photos on WhatsApp.' },
+  { slug:'iphone-13-pro-256gb-used', name:'iPhone 13 Pro', storage:'256GB', colour:'Sierra Blue', condition:'UK Used', price:720000, featured:6,
+    img:'https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=900&auto=format&fit=crop',
+    desc:'ProMotion display and triple cameras at a smart used price. Ask for the specific unit gallery.' },
+  { slug:'iphone-13-128gb-new', name:'iPhone 13', storage:'128GB', colour:'Starlight', condition:'Brand New', price:825000, featured:7,
+    img:'https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=900&auto=format&fit=crop',
+    desc:'Brand New iPhone 13 — still a superb buy for battery life and cameras. Sealed stock where available.' },
+  { slug:'iphone-12-pro-max-128gb-used', name:'iPhone 12 Pro Max', storage:'128GB', colour:'Pacific Blue', condition:'UK Used', price:560000, featured:8, tag:'Entry Pro Max',
+    img:'https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=900&auto=format&fit=crop',
+    desc:'Most affordable Pro Max on the shelf. Large display, LiDAR cameras — ideal upgrade on a budget.' },
+];
+
+/* ---------- toast ---------- */
+let toastT;
+function toast(msg){
+  const t = document.getElementById('toast');
+  document.getElementById('toast-msg').textContent = msg;
+  t.classList.add('show'); clearTimeout(toastT);
+  toastT = setTimeout(()=>t.classList.remove('show'), 2600);
+}
+
+/* ---------- WhatsApp links ---------- */
+function bindWA(scope=document){
+  scope.querySelectorAll('a.wa-link').forEach(a=>{
+    if(a.dataset.waBound) return; a.dataset.waBound='1';
+    a.addEventListener('click', (e)=>{
+      let msg = a.getAttribute('data-wa') || 'Hello Skytech!';
+      if(a.dataset.waDynamic==='repair') msg = buildRepairMsg();
+      if(a.id==='m-wa' && a.dataset.msg) msg = a.dataset.msg;
+      a.href = waLink(msg); a.target='_blank'; a.rel='noopener';
+      toast('Opening WhatsApp — we reply fast.');
+    });
+  });
+}
+bindWA();
+
+/* ---------- product card factory (mirrors existing ProductCard) ---------- */
+function cardHTML(p, compact=false){
+  const isNew = p.condition==='Brand New';
+  const waMsg = `Hello Skytech! I'm interested in the ${p.name} ${p.storage} (${p.colour}, ${p.condition}) listed at ${fmtNGN(p.price)} on /iphone. Link: /products/${p.slug}. Is it available?`;
+  return `
+  <article class="p-card snap-start ${compact?'!w-[270px] sm:!w-[300px] shrink-0':''}" data-slug="${p.slug}">
+    <div class="p-img">
+      <img src="${p.img}" alt="${p.name} ${p.storage} in ${p.colour}" loading="lazy" width="600" height="690" onerror="imgFail(this)">
+      <span class="absolute top-3 left-3 z-10 cond ${isNew?'cond-new':'cond-used'}">${p.condition}</span>
+      ${p.tag?`<span class="absolute top-3 right-3 z-10 tick bg-black/55 backdrop-blur border border-white/15 text-white px-2.5 py-1.5 rounded-[2px]">${p.tag.toUpperCase()}</span>`:''}
+      <button data-open-product="${p.slug}" class="absolute bottom-3 right-3 z-10 w-[44px] h-[44px] bg-white text-black rounded-full items-center justify-center hidden sm:flex hover:bg-[#00FF2B] transition-colors" aria-label="Quick view ${p.name}" style="display:flex">↗</button>
+    </div>
+    <div class="p-4">
+      <h3 class="font-grotesk font-bold text-[17px] tracking-tight leading-tight">${p.name}</h3>
+      <p class="text-faint text-[12.5px] mt-1 font-mono tracking-wide">${p.storage} • ${p.colour.toUpperCase()}</p>
+      <p class="price text-[19px] mt-2.5">${fmtNGN(p.price)}</p>
+      <div class="flex gap-2 mt-3.5">
+        <button data-open-product="${p.slug}" class="flex-1 min-h-[44px] bg-white text-black font-grotesk font-semibold text-[13.5px] rounded-[2px] hover:bg-[#00FF2B] transition-colors">View device</button>
+        <a href="${waLink(waMsg)}" target="_blank" rel="noopener" class="wa-link w-[44px] h-[44px] shrink-0 border border-line rounded-[2px] flex items-center justify-center hover:border-white transition-colors" aria-label="Enquire about ${p.name} on WhatsApp" data-wa="${waMsg.replace(/"/g,'&quot;')}">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.6 12.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.5 7.5 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.9a12 12 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.1-.5-.3Z"/></svg>
+        </a>
+      </div>
+      <p class="tick text-faint mt-2.5 opacity-70">/products/${p.slug}</p>
+    </div>
+  </article>`;
+}
+
+/* ---------- catalogue state ---------- */
+const catGrid = document.getElementById('cat-grid');
+const catCount = document.getElementById('cat-count');
+const catEmpty = document.getElementById('cat-empty');
+const catError = document.getElementById('cat-error');
+let catFilter='all', catSearch='', catSort='featured', catalogueLoaded=false, forceError=false;
+
+function skeletons(n=8){
+  catGrid.innerHTML = Array.from({length:n}).map(()=>`
+    <div class="skel"><div class="shimmer aspect-[4/4.6]"></div>
+    <div class="p-4 space-y-2.5"><div class="shimmer h-5 w-2/3 rounded-sm"></div><div class="shimmer h-4 w-1/2 rounded-sm"></div><div class="shimmer h-6 w-1/3 rounded-sm"></div><div class="shimmer h-11 w-full rounded-sm"></div></div></div>`).join('');
+  catCount.textContent='LOADING CATALOGUE…';
+}
+function skeletonStrip(){
+  document.getElementById('strip').innerHTML = Array.from({length:5}).map(()=>`
+    <div class="skel !w-[280px] shrink-0 snap-start"><div class="shimmer aspect-[4/4.4]"></div><div class="p-4"><div class="shimmer h-5 w-2/3 rounded-sm"></div><div class="shimmer h-6 w-1/3 rounded-sm mt-2"></div></div></div>`).join('');
+}
+
+function getFiltered(list, filter, search, sort){
+  let out=[...list];
+  if(filter==='Brand New'||filter==='UK Used') out=out.filter(p=>p.condition===filter);
+  if(filter==='Pro') out=out.filter(p=>/Pro/.test(p.name));
+  if(filter==='under900') out=out.filter(p=>p.price<900000);
+  if(search){ const s=search.toLowerCase(); out=out.filter(p=>(p.name+p.storage+p.colour+p.condition).toLowerCase().includes(s)); }
+  if(sort==='low') out.sort((a,b)=>a.price-b.price);
+  else if(sort==='high') out.sort((a,b)=>b.price-a.price);
+  else if(sort==='az') out.sort((a,b)=>a.name.localeCompare(b.name));
+  else out.sort((a,b)=>a.featured-b.featured);
+  return out;
+}
+
+function renderCatalogue(){
+  catEmpty.classList.add('hidden'); catError.classList.add('hidden');
+  if(forceError || !navigator.onLine){ catGrid.innerHTML=''; catError.classList.remove('hidden'); catCount.textContent='OFFLINE — CATALOGUE PAUSED'; return; }
+  const out = getFiltered(PRODUCTS, catFilter, catSearch, catSort);
+  catCount.textContent = out.length? `${out.length} DEVICE${out.length>1?'S':''} • ${catFilter==='all'?'ALL CONDITIONS':catFilter.toUpperCase()} • LIVE FROM ADMIN` : '0 RESULTS';
+  if(!out.length){ catGrid.innerHTML=''; catEmpty.classList.remove('hidden'); return; }
+  catGrid.innerHTML = out.map(p=>cardHTML(p)).join('');
+  bindWA(catGrid); bindOpenButtons(catGrid);
+  if(!reducedMotion && window.gsap){
+    gsap.fromTo('#cat-grid .p-card',{y:26,opacity:0},{y:0,opacity:1,duration:.6,stagger:.05,ease:'power3.out',overwrite:true});
+  }
+}
+function renderStrip(filter='all', search=''){
+  const out = getFiltered(PRODUCTS, filter, search, 'featured');
+  const strip=document.getElementById('strip');
+  document.getElementById('strip-count').textContent = out.length? `${out.length} DEVICES • DRAG OR SWIPE →` : 'NO MATCHES — TRY ANOTHER FILTER';
+  strip.innerHTML = out.length? out.map(p=>cardHTML(p,true)).join('') :
+    `<div class="w-full border border-dashed border-line rounded-[3px] p-10 text-center shrink-0"><p class="font-grotesk font-bold text-xl mb-2">No quick match.</p><p class="text-muted text-sm">Clear search or open the full catalogue below.</p></div>`;
+  bindWA(strip); bindOpenButtons(strip);
+}
+
+function loadCatalogue(){
+  skeletons(); skeletonStrip();
+  catEmpty.classList.add('hidden'); catError.classList.add('hidden');
+  setTimeout(()=>{
+    catalogueLoaded=true;
+    renderCatalogue(); renderStrip(qFilter, qSearch);
+    // reveal animation hook
+    if(!reducedMotion && window.ScrollTrigger) ScrollTrigger.refresh();
+  }, 1300);
+}
+document.getElementById('cat-retry').addEventListener('click', ()=>{ forceError=false; toast('Retrying catalogue…'); loadCatalogue(); });
+window.addEventListener('offline', ()=>{ if(catalogueLoaded) renderCatalogue(); });
+window.addEventListener('online', ()=>{ toast('Back online — catalogue live.'); if(catalogueLoaded) renderCatalogue(); });
+
+/* catalogue toolbar */
+document.querySelectorAll('#cat-filters .chip').forEach(c=>c.addEventListener('click', ()=>{
+  document.querySelectorAll('#cat-filters .chip').forEach(x=>{x.classList.remove('active');x.setAttribute('aria-selected','false')});
+  c.classList.add('active'); c.setAttribute('aria-selected','true'); catFilter=c.dataset.cf; renderCatalogue();
+}));
+let catSearchT;
+document.getElementById('cat-search').addEventListener('input', e=>{ clearTimeout(catSearchT); catSearchT=setTimeout(()=>{catSearch=e.target.value.trim(); renderCatalogue();},220); });
+document.getElementById('cat-sort').addEventListener('change', e=>{ catSort=e.target.value; renderCatalogue(); });
+document.getElementById('cat-reset').addEventListener('click', ()=>{
+  catFilter='all'; catSearch=''; catSort='featured';
+  document.getElementById('cat-search').value=''; document.getElementById('cat-sort').value='featured';
+  document.querySelectorAll('#cat-filters .chip').forEach(x=>x.classList.toggle('active', x.dataset.cf==='all'));
+  renderCatalogue();
+});
+/* quick discovery */
+let qFilter='all', qSearch='';
+document.querySelectorAll('#quick-filters .chip').forEach(c=>c.addEventListener('click', ()=>{
+  document.querySelectorAll('#quick-filters .chip').forEach(x=>x.classList.remove('active'));
+  c.classList.add('active'); qFilter=c.dataset.qf; renderStrip(qFilter,qSearch);
+}));
+document.getElementById('quick-search').addEventListener('input', e=>{ qSearch=e.target.value.trim(); renderStrip(qFilter,qSearch); });
+document.getElementById('strip-prev').addEventListener('click', ()=>document.getElementById('strip').scrollBy({left:-340,behavior:reducedMotion?'auto':'smooth'}));
+document.getElementById('strip-next').addEventListener('click', ()=>document.getElementById('strip').scrollBy({left:340,behavior:reducedMotion?'auto':'smooth'}));
+
+/* jump to catalogue with filter */
+document.querySelectorAll('[data-cat-jump]').forEach(b=>b.addEventListener('click', ()=>{
+  const f=b.dataset.catJump;
+  catFilter=f; document.getElementById('cat-search').value=''; catSearch='';
+  document.querySelectorAll('#cat-filters .chip').forEach(x=>x.classList.toggle('active', x.dataset.cf===f));
+  renderCatalogue();
+  document.getElementById('catalogue').scrollIntoView({behavior:reducedMotion?'auto':'smooth'});
+  toast(`Showing ${f} iPhones.`);
+}));
+
+/* ---------- modal /products/:slug ---------- */
+const modal=document.getElementById('pmodal');
+let lastFocus=null;
+function openProduct(slug){
+  const p=PRODUCTS.find(x=>x.slug===slug); if(!p) return;
+  lastFocus=document.activeElement;
+  document.getElementById('m-img').src=p.img;
+  document.getElementById('m-img').alt=`${p.name} ${p.storage} ${p.colour}`;
+  const c=document.getElementById('m-cond'); c.textContent=p.condition; c.className='absolute top-4 left-4 cond '+(p.condition==='Brand New'?'cond-new':'cond-used');
+  document.getElementById('m-route').textContent='/products/'+p.slug;
+  document.getElementById('m-name').textContent=p.name;
+  document.getElementById('m-sub').textContent=`${p.storage} • ${p.colour} • ${p.condition}`;
+  document.getElementById('m-price').textContent=fmtNGN(p.price);
+  document.getElementById('m-c2').textContent=p.condition;
+  document.getElementById('m-s2').textContent=p.storage;
+  document.getElementById('m-col').textContent=p.colour;
+  document.getElementById('m-desc').textContent=p.desc;
+  const msg=`Hello Skytech! I want this iPhone from /iphone:\n• ${p.name} ${p.storage}\n• ${p.colour} / ${p.condition}\n• ${fmtNGN(p.price)}\n• Link: /products/${p.slug}\nIs it still available?`;
+  const wa=document.getElementById('m-wa'); wa.dataset.msg=msg; wa.href=waLink(msg); wa.target='_blank'; wa.rel='noopener';
+  modal.classList.add('show'); document.body.style.overflow='hidden';
+  try{ history.pushState({slug}, '', '#/products/'+slug); }catch(e){}
+  modal.querySelector('[data-close-modal].hidden, button')?.focus?.();
+}
+function closeProduct(){
+  modal.classList.remove('show'); document.body.style.overflow='';
+  try{ history.pushState({}, '', location.pathname + location.search + '#catalogue'); }catch(e){}
+  if(lastFocus) lastFocus.focus?.();
+}
+function bindOpenButtons(scope=document){
+  scope.querySelectorAll('[data-open-product]').forEach(b=>{
+    if(b.dataset.obound) return; b.dataset.obound='1';
+    b.addEventListener('click', ()=>openProduct(b.dataset.openProduct));
+  });
+}
+bindOpenButtons(document);
+modal.querySelectorAll('[data-close-modal]').forEach(b=>b.addEventListener('click', closeProduct));
+document.addEventListener('keydown', e=>{ if(e.key==='Escape'&&modal.classList.contains('show')) closeProduct(); });
+
+/* ---------- repair ---------- */
+const issues=new Set();
+function buildRepairMsg(){
+  const n=document.getElementById('r-name').value.trim();
+  const m=document.getElementById('r-model').value;
+  const d=document.getElementById('r-desc').value.trim();
+  const list=[...issues].join(', ') || 'a problem I will describe';
+  return `Hello Skytech! I'd like to ask about a repair (from /iphone).\n• Name: ${n||'[my name]'}\n• Device: ${m}\n• Issue: ${list}\n• Details: ${d||'I will explain on chat — can I send photos/video?'}`;
+}
+function updateRepairPreview(){ document.getElementById('r-preview').textContent=buildRepairMsg(); }
+document.querySelectorAll('#r-issues .chip').forEach(ch=>ch.addEventListener('click', ()=>{
+  ch.classList.toggle('active');
+  ch.classList.contains('active')? issues.add(ch.dataset.issue) : issues.delete(ch.dataset.issue);
+  updateRepairPreview();
+}));
+['r-name','r-model','r-desc'].forEach(id=>document.getElementById(id).addEventListener('input', updateRepairPreview));
+updateRepairPreview();
+document.getElementById('r-send').addEventListener('click', e=>{
+  if(!issues.size && !document.getElementById('r-desc').value.trim()){
+    e.preventDefault(); toast('Pick an issue or describe the problem first.'); return;
+  }
+});
+
+/* ---------- FAQ ---------- */
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const btn=item.querySelector('button');
+  btn.addEventListener('click', ()=>{
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open'); i.querySelector('button').setAttribute('aria-expanded','false')});
+    if(!open){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  });
+});
+
+/* ---------- why rows ---------- */
+const whyFloat=document.getElementById('why-float');
+const whyImg=whyFloat.querySelector('img');
+document.querySelectorAll('.why-row').forEach(row=>{
+  const toggle=()=>{ document.querySelectorAll('.why-row').forEach(r=>{r.classList.remove('open'); r.setAttribute('aria-expanded','false')}); row.classList.add('open'); row.setAttribute('aria-expanded','true'); };
+  row.addEventListener('click', toggle);
+  row.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault(); toggle();} });
+  row.addEventListener('mouseenter', ()=>{ if(window.innerWidth<1024) return; whyImg.src=row.dataset.img; whyFloat.classList.add('show'); });
+  row.addEventListener('mouseleave', ()=>whyFloat.classList.remove('show'));
+});
+document.addEventListener('mousemove', e=>{
+  if(!whyFloat.classList.contains('show')) return;
+  whyFloat.style.left=(e.clientX+24)+'px'; whyFloat.style.top=(e.clientY-170)+'px';
+});
+
+/* ---------- nav / menu / sticky ---------- */
+const nav=document.getElementById('nav'), sticky=document.getElementById('stickycta');
+window.addEventListener('scroll', ()=>{
+  nav.classList.toggle('scrolled', window.scrollY>30);
+  sticky.classList.toggle('show', window.scrollY>window.innerHeight*0.85);
+},{passive:true});
+const mmenu=document.getElementById('mmenu'), menubtn=document.getElementById('menubtn');
+menubtn.addEventListener('click', ()=>{ mmenu.classList.add('show'); menubtn.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; });
+function closeMenu(){ mmenu.classList.remove('show'); menubtn.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+document.getElementById('menuclose').addEventListener('click', closeMenu);
+mmenu.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMenu));
+
+/* ---------- drag scroll ---------- */
+document.querySelectorAll('.drag-scroll').forEach(el=>{
+  let down=false,sx=0,sl=0;
+  el.addEventListener('pointerdown', e=>{down=true;sx=e.clientX;sl=el.scrollLeft;el.classList.add('dragging');});
+  window.addEventListener('pointerup', ()=>{down=false;el.classList.remove('dragging');});
+  el.addEventListener('pointermove', e=>{ if(!down) return; el.scrollLeft=sl-(e.clientX-sx); });
+});
+
+/* ---------- marquee duplicate ---------- */
+const mt=document.getElementById('marquee-track');
+mt.innerHTML+=mt.innerHTML;
+
+/* ---------- chapters on scroll ---------- */
+const chapters=document.querySelectorAll('[data-chapter]');
+const chObs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ chapters.forEach(c=>c.classList.remove('active')); e.target.classList.add('active'); } }),{rootMargin:'-40% 0px -40% 0px'});
+chapters.forEach(c=>chObs.observe(c));
+
+/* ---------- reveal images ---------- */
+const rObs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); rObs.unobserve(e.target);} }),{threshold:.2});
+document.querySelectorAll('[data-reveal]').forEach(el=>rObs.observe(el));
+
+/* ---------- GSAP motion ---------- */
+function heroIntro(){
+  if(reducedMotion || !window.gsap){
+    document.querySelectorAll('.mask > span').forEach(s=>s.style.transform='none');
+    ['hero-eyebrow','hero-sub','hero-meta','hero-ctas','hero-img'].forEach(id=>document.getElementById(id).style.opacity='1');
+    return;
+  }
+  const tl=gsap.timeline({defaults:{ease:'power4.out'}});
+  tl.to('#hero-eyebrow',{opacity:1,duration:.8},0)
+    .to('#hero .mask > span',{y:0,duration:1.15,stagger:.12},.1)
+    .to('#hero-sub',{opacity:1,y:0,duration:.9},.6)
+    .to('#hero-meta',{opacity:1,duration:.9},.7)
+    .to('#hero-ctas',{opacity:1,duration:.9},.8)
+    .to('#hero-img',{opacity:1,y:0,duration:1.2,ease:'power3.out'},.4);
+  gsap.set('#hero-sub',{y:16}); gsap.set('#hero-ctas',{y:16}); gsap.set('#hero-img',{y:40});
+}
+function scrollFX(){
+  if(reducedMotion || !window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+  // hero parallax
+  gsap.to('#hero-img',{yPercent:10,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.to('#hero-bg-word',{yPercent:30,opacity:0,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}});
+  // full-bleed parallax
+  document.querySelectorAll('[data-parallax-full]').forEach(img=>{
+    gsap.fromTo(img,{yPercent:-10},{yPercent:8,ease:'none',scrollTrigger:{trigger:img.parentElement,start:'top bottom',end:'bottom top',scrub:true}});
+  });
+  document.querySelectorAll('[data-parallax]').forEach(img=>{
+    gsap.fromTo(img,{yPercent:-8},{yPercent:6,ease:'none',scrollTrigger:{trigger:img.closest('section')||img,start:'top bottom',end:'bottom top',scrub:true}});
+  });
+  // hero tilt
+  const wrap=document.querySelector('.hero-img-wrap'), inner=document.getElementById('hero-img');
+  if(window.matchMedia('(pointer:fine)').matches){
+    document.getElementById('hero').addEventListener('mousemove', e=>{
+      const r=wrap.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
+      gsap.to(inner,{rotateY:x*8,rotateX:-y*6,transformPerspective:1000,duration:.6,ease:'power2.out'});
+    });
+  }
+  // magnetic
+  document.querySelectorAll('.magnetic').forEach(btn=>{
+    btn.addEventListener('mousemove', e=>{ const r=btn.getBoundingClientRect(); gsap.to(btn,{x:(e.clientX-r.left-r.width/2)*.12,y:(e.clientY-r.top-r.height/2)*.18,duration:.4}); });
+    btn.addEventListener('mouseleave', ()=>gsap.to(btn,{x:0,y:0,duration:.5,ease:'elastic.out(1,.5)'}));
+  });
+}
+
+/* ---------- preloader ---------- */
+(function preload(){
+  const pre=document.getElementById('preloader'), fill=document.getElementById('loadfill'), pct=document.getElementById('loadpct');
+  let p=0;
+  loadCatalogue();
+  const iv=setInterval(()=>{
+    p=Math.min(100, p + (p<70? Math.random()*14 : Math.random()*6));
+    fill.style.transform=`scaleX(${p/100})`;
+    pct.textContent=String(Math.floor(p)).padStart(2,'0');
+    if(p>=100){ clearInterval(iv);
+      setTimeout(()=>{ pre.classList.add('done'); heroIntro(); scrollFX(); }, 350);
+    }
+  }, 90);
+  // safety
+  setTimeout(()=>{ if(!pre.classList.contains('done')){ pre.classList.add('done'); heroIntro(); scrollFX(); } }, 4500);
+})();
+</script>
+</body>
+</html>
